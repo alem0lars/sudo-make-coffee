@@ -1,0 +1,17 @@
+ipc:
+  db:
+    host: 'localhost'
+    port: 6379
+    nsid: 'sudo_make_coffee'
+  channels:
+    - name: 'public'
+      format: 'json'
+    - name: 'team'
+      format: 'json'
+irc:
+  server: 'irc.azzurra.org'
+  channels:
+    - name: '#pusgnacche'
+      ipc_chans: ['public']
+    - name: '#shungarda'
+      ipc_chans: ['team']
